@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+    android:layout_marginLeft="21dp"
+    android:layout_marginRight="21dp"
+    android:orientation="horizontal"
+    android:splitMotionEvents="false">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="66dp"
+        android:layout_marginStart="2dp"
+        android:paddingEnd="8dp"
+        android:background="@android:color/transparent"
+        android:splitMotionEvents="false">
+
+        <TextView
+            android:id="@+id/record_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:textDirection="locale"
+            android:textSize="15sp"
+            android:textColor="@drawable/selector_text_color" />
+
+        <TextView
+            android:id="@+id/record_file_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/record_file_name"
+            android:singleLine="true"
+            android:textDirection="locale"
+            android:textSize="13sp"
+            android:textColor="#b8b8b8" />
+
+        <TextView
+            android:id="@+id/record_file_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/record_file_title"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="6dp"
+            android:layout_below="@id/record_file_name"
+            android:textDirection="locale"
+            android:singleLine="true"
+            android:textSize="13sp"
+            android:textColor="#747474" />
+    </RelativeLayout>
+    
+    <CheckBox
+        android:layout_marginLeft="100dp"
+		android:layout_centerVertical="true"
+		android:layout_alignParentRight="true"
+        android:id="@+id/record_file_checkbox"
+        android:layout_marginRight="4dp"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:checked="false"
+		android:focusable="false"   
+		android:button="@null"
+        android:focusableInTouchMode="false"   
+        android:clickable="false"  
+        android:background="@drawable/check_right"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 没有焦点时字体颜色 -->
+    <item android:state_selected="false" 
+        android:color="@color/text_normal_color"
+        android:drawable="@color/text_normal_color"
+        />
+    <!-- 选中时的字体颜色 -->
+    <item android:state_selected="true" 
+        android:color="@color/text_press_color"
+        android:drawable="@color/text_press_color"
+        />
+    
+    <item 
+        android:state_focused="true"
+        android:color="@color/text_press_color"
+        ></item>
+    
+    <item 
+    	android:state_focused="false"
+    	android:color="@color/text_normal_color"
+        ></item>
+    
+    <!-- 非触摸模式下获得焦点并单击时的字体颜色 -->
+    <item android:state_pressed="true" 
+        android:color="@color/text_press_color"
+		android:drawable="@color/text_press_color"/>
+	
+    <item android:state_pressed="false" 
+        android:color="@color/text_normal_color"
+        android:drawable="@color/text_normal_color"/>
+</selector>

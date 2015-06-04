@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/nt_actionbar_multichoicemode"
+    android:layout_width="match_parent"
+    android:layout_height="45.33dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/list_back_rela"
+        >
+     <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:id="@+id/main_top_arrow"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/top_back_click"
+	        />	    
+	    
+	    <TextView 
+	        android:layout_toRightOf="@+id/main_top_arrow"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/ruiemi_record"
+	        android:layout_marginLeft="7dp"
+	        android:layout_centerVertical="true"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"
+	        />
+	    </RelativeLayout>
+
+</RelativeLayout>
